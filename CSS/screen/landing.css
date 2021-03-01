@@ -1,0 +1,50 @@
+.landing {
+  text-align: center;
+  padding: 88px 0 160px;
+}
+
+.landing-title {
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.video-player video {
+  width: auto;
+  height: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    padding: 74px 0 121px;
+  }
+
+  .landing-title {
+    margin-bottom: 34px;
+    font-size: 32px;
+    line-height: 1.125;
+  }
+
+  .video-player video {
+    height: 201px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .landing {
+    padding: 72px 0 132px;
+  }
+
+  .landing-title {
+    margin-bottom: 53px;
+    font-size: 44px;
+    line-height: 1.0909;
+  }
+
+  .video-player video {
+    height: 324px;
+  }
+}
