@@ -1,5 +1,8 @@
 .header-group {
-  background-image: url("/assets/image/landing-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/image/landing-image.jpg");
+  background-position: center, center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -57,6 +60,7 @@
 
   .main-nav {
     display: block;
+    transform: translate(9%);
   }
 
   .main-nav-links {
@@ -101,6 +105,10 @@
     font-size: 36px;
     line-height: 1.2188;
     letter-spacing: 2px;
+  }
+
+  .main-nav {
+    transform: translate(10%);
   }
 
   .main-nav-link a {
