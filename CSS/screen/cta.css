@@ -1,0 +1,151 @@
+.cta {
+  text-align: center;
+  padding: 44px 0 56px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/assets/image/cta-image.jpg");
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cta-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: -0.5;
+}
+
+.cta-form {
+  width: 264px;
+  height: 312px;
+  margin: 0 auto;
+  padding: 64px 0 36px;
+  border-radius: 8px;
+  background: linear-gradient(#707070, #21333f);
+}
+
+.cta-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-form form input {
+  width: 220px;
+  height: 32px;
+  margin-bottom: 16px;
+  padding-left: 15px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  color: #4b4b4b;
+  font-size: 11px;
+  line-height: 1.2572;
+  letter-spacing: 0.11px;
+  opacity: 0.8;
+}
+
+.cta-form form input:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+.cta-form form a {
+  margin-bottom: 15px;
+  color: #ebcb80;
+  font-size: 11px;
+  line-height: 2.1818;
+  text-decoration-line: underline;
+}
+
+.cta-form form button {
+  width: 140px;
+  height: 32px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ebcb80;
+  color: #4b4b4b;
+  font-size: 11px;
+  line-height: 1.219;
+  letter-spacing: 0.8px;
+}
+
+@media screen and (min-width: 768px) {
+  .cta {
+    padding: 40px 0 41px;
+  }
+
+  .cta-title {
+    margin-bottom: 26px;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.8;
+  }
+
+  .cta-form {
+    width: 280px;
+    height: 325px;
+    padding: 64px 0 23px;
+  }
+
+  .cta-form form input {
+    height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .cta-form form input:nth-child(3) {
+    margin-bottom: 22px;
+  }
+
+  .cta-form form a {
+    margin-bottom: 22px;
+  }
+
+  .cta-form form button {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cta {
+    padding: 72px 0 48px;
+  }
+
+  .cta-title {
+    margin-bottom: 36px;
+    font-size: 44px;
+    line-height: 1.0909;
+    letter-spacing: -1.6;
+  }
+
+  .cta-form {
+    width: 360px;
+    height: 384px;
+    padding: 84px 0 24px;
+  }
+
+  .cta-form form input {
+    width: 256px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+
+  .cta-form form input:nth-child(3) {
+    margin-bottom: 27px;
+  }
+
+  .cta-form form a {
+    margin-bottom: 19px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .cta-form form button {
+    width: 198px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 1.2187;
+    letter-spacing: 1px;
+  }
+}
