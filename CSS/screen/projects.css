@@ -36,14 +36,14 @@
   line-height: 1.4545;
 }
 
-.projects-card p {
+.projects-marketing {
   margin-bottom: 20px;
   color: #4b4b4b;
   font-size: 11px;
   line-height: 1.4545;
 }
 
-.projects-card button {
+.projects-btn {
   width: 120px;
   height: 32px;
   border: 2px solid #4b4b4b;
@@ -55,7 +55,7 @@
   letter-spacing: 0.8px;
 }
 
-.projects-card button:hover {
+.projects-btn:hover {
   background-color: #ebcb80;
 }
 
@@ -73,18 +73,13 @@
     margin-bottom: 38px;
   }
 
-  .projects-card-group {
+  .projects-group {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .projects-card {
-    margin-right: 26px;
     margin-bottom: 0;
-  }
-
-  .projects-card:last-child {
-    margin-right: 0;
   }
 
   .projects-card img {
@@ -97,12 +92,11 @@
     line-height: 2;
   }
 
-  .projects-card p {
+  .projects-marketing {
     height: 30px;
   }
 
-  .projects-card button {
-    width: 120px;
+  .projects-btn {
     height: 40px;
   }
 }
@@ -122,12 +116,10 @@
     line-height: 1.5;
   }
 
-  .projects-card {
-    margin-right: 28px;
-  }
-
   .projects-card img {
-    height: 262px;
+    max-width: 220px;
+    max-height: 220px;
+    height: 100%;
     margin-bottom: 29px;
   }
 
@@ -137,15 +129,16 @@
     line-height: 1.6666;
   }
 
-  .projects-card p {
+  .projects-marketing {
+    width: 220px;
     height: 50px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.5;
   }
 
-  .projects-card button {
-    width: 200px;
+  .projects-btn {
+    width: 170px;
     height: 48px;
     font-size: 16px;
     line-height: 1.2187;
