@@ -45,6 +45,21 @@ li {
   display: none;
 }
 
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing .title,
+.projects .title,
+.advantages .title,
+.cta .title,
+.contact .title,
+.team .title {
+  line-height: 2;
+  letter-spacing: -0.5px;
+}
+
 .opacity-btn:hover {
   opacity: 0.5;
 }
@@ -54,7 +69,33 @@ li {
 }
 
 @media screen and (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .pricing .title,
+  .projects .title,
+  .advantages .title,
+  .cta .title,
+  .contact .title,
+  .team .title {
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .title {
+    font-size: 44px;
+  }
+
+  .pricing .title,
+  .projects .title,
+  .advantages .title,
+  .cta .title,
+  .contact .title,
+  .team .title {
+    line-height: 1.0909;
+    letter-spacing: -1.6px;
+  }
 }

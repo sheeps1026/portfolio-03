@@ -3,13 +3,9 @@
   padding: 29px 0 56px;
 }
 
-.projects-title {
+.projects .title {
   margin-bottom: 7px;
   color: #4b4b4b;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: -0.5px;
 }
 
 .projects-desc {
@@ -68,11 +64,8 @@
     padding: 40px 0 48px;
   }
 
-  .projects-title {
+  .projects .title {
     margin-bottom: 11px;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.8px;
   }
 
   .projects-desc {
@@ -119,11 +112,8 @@
     padding: 67px 0 75px;
   }
 
-  .projects-title {
+  .projects .title {
     margin-bottom: 23px;
-    font-size: 44px;
-    line-height: 1.0909;
-    letter-spacing: -1.6px;
   }
 
   .projects-desc {

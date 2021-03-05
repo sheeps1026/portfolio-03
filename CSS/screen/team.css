@@ -1,15 +1,11 @@
 .team {
+  text-align: center;
   padding: 21px 0 44px;
 }
 
-.team-title {
-  text-align: center;
+.team .title {
   margin-bottom: 19px;
   color: #4b4b4b;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: -0.5px;
 }
 
 .team-card {
@@ -51,11 +47,8 @@
     padding: 39px 0 74px;
   }
 
-  .team-title {
+  .team .title {
     margin-bottom: 11px;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.8px;
   }
 
   .team-group {
@@ -72,11 +65,8 @@
     padding: 67px 0 177px;
   }
 
-  .team-title {
+  .team .title {
     margin-bottom: 52px;
-    font-size: 44px;
-    line-height: 1.0909;
-    letter-spacing: -1.6px;
   }
 
   .team-card {

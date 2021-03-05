@@ -2,14 +2,10 @@
   padding: 45px 0 30px;
 }
 
-.contact-title {
+.contact .title {
   text-align: center;
   margin-bottom: 30px;
   color: #4b4b4b;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: -0.5px;
 }
 
 .contact-group {
@@ -166,11 +162,8 @@
     padding: 49px 0 68px;
   }
 
-  .contact-title {
+  .contact .title {
     margin-bottom: 14px;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.8px;
   }
 
   .contact-group {
@@ -246,11 +239,8 @@
     padding: 92px 0 81px;
   }
 
-  .contact-title {
+  .contact .title {
     margin-bottom: 65px;
-    font-size: 44px;
-    line-height: 1.0909;
-    letter-spacing: -1.6px;
   }
 
   .contact-form {
