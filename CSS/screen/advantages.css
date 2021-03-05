@@ -3,13 +3,9 @@
   padding: 28px 0 37px;
 }
 
-.advantages-title {
+.advantages .title {
   margin-bottom: 3px;
   color: #4b4b4b;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: -0.5px;
 }
 
 .advantages-desc {
@@ -60,11 +56,8 @@
     padding: 42px 0 40px;
   }
 
-  .advantages-title {
+  .advantages .title {
     margin-bottom: 22px;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.8px;
   }
 
   .advantages-desc {
@@ -81,11 +74,8 @@
     padding: 80px 0 59px;
   }
 
-  .advantages-title {
+  .advantages .title {
     margin-bottom: 32px;
-    font-size: 44px;
-    line-height: 1.0909;
-    letter-spacing: -1.6px;
   }
 
   .advantages-desc {
