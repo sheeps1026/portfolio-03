@@ -1,6 +1,6 @@
 .landing {
+  padding-top: 88px;
   text-align: center;
-  padding: 88px 0 160px;
 }
 
 .landing .title {
@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 768px) {
   .landing {
-    padding: 74px 0 121px;
+    padding-top: 74px;
   }
 
   .landing .title {
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 992px) {
   .landing {
-    padding: 72px 0 132px;
+    padding-top: 72px;
   }
 
   .landing .title {
