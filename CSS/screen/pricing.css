@@ -21,7 +21,7 @@
   border-radius: 8px;
 }
 
-.pricing-card .select {
+.pricing-card.select {
   display: block;
 }
 
@@ -101,6 +101,11 @@
 
 .select-btn:last-child {
   margin-right: 0;
+}
+
+.select-btn:hover,
+.select-btn.select {
+  background-color: #ebcb80;
 }
 
 @media screen and (min-width: 768px) {

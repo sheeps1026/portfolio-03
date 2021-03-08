@@ -1,29 +1,60 @@
+let index = 0;
+
+// Pricing
+const CLASS_SELECT = "select";
+
+const pricingCards = document.querySelectorAll(".pricing-card");
+
+const selectBtn = document.querySelectorAll(".select-btn");
+
+function display() {
+  let num;
+
+  for (let i = 0; i < selectBtn.length; i++) {
+    pricingCards[i].classList.remove("select");
+    selectBtn[i].classList.remove("select");
+  }
+
+  this.classList.add("select");
+
+  for (let i = 0; i < selectBtn.length; i++) {
+    if (selectBtn[i].classList.contains("select")) {
+      num = i;
+    }
+  }
+
+  pricingCards[num].classList.add("select");
+  index = num;
+}
+
+selectBtn.forEach((e) => {
+  e.onclick = display;
+});
+
 // Testimonials
 const CLASS_ACTIVE = "active";
 
 const btnPrev = document.querySelector(".testimonials-btn__prev");
 const btnNext = document.querySelector(".testimonials-btn__next");
 
-const cards = document.querySelectorAll(".testimonials-card");
+const testimonialsCards = document.querySelectorAll(".testimonials-card");
 
 const firstCard = document.querySelector(".testimonials-card:first-child");
 const lastCard = document.querySelector(".testimonials-card:last-child");
 
 const indicator = document.querySelectorAll(".indicator");
 
-let index = 0;
-
-for (let i = 0; i < cards.length; i++) {
-  if (cards[i].classList.contains("active")) {
+for (let i = 0; i < testimonialsCards.length; i++) {
+  if (testimonialsCards[i].classList.contains("active")) {
     index = i;
   }
 }
 
-function display() {
+function navDots() {
   let num;
 
   for (let i = 0; i < indicator.length; i++) {
-    cards[i].classList.remove("active");
+    testimonialsCards[i].classList.remove("active");
     indicator[i].classList.remove("active");
   }
 
@@ -34,13 +65,13 @@ function display() {
       num = i;
     }
   }
-  cards[num].classList.add("active");
+  testimonialsCards[num].classList.add("active");
   index = num;
   // console.log(index);
 }
 
 function prevMove() {
-  cards[index].classList.remove("active");
+  testimonialsCards[index].classList.remove("active");
   indicator[index].classList.remove("active");
   index--;
   // console.log(index);
@@ -49,30 +80,30 @@ function prevMove() {
   //   index = 4;
   // }
   if (index < 0) {
-    index = cards.length - 1;
+    index = testimonialsCards.length - 1;
   }
 
   indicator[index].classList.add("active");
-  cards[index].classList.add("active");
+  testimonialsCards[index].classList.add("active");
 }
 
 function nextMove() {
-  cards[index].classList.remove("active");
+  testimonialsCards[index].classList.remove("active");
   indicator[index].classList.remove("active");
   index++;
   // console.log(index);
 
-  if (index == cards.length) {
+  if (index == testimonialsCards.length) {
     index = 0;
   }
 
   indicator[index].classList.add("active");
-  cards[index].classList.add("active");
+  testimonialsCards[index].classList.add("active");
 }
 
 btnPrev.onclick = prevMove;
 btnNext.onclick = nextMove;
 
 indicator.forEach((e) => {
-  e.onclick = display;
+  e.onclick = navDots;
 });

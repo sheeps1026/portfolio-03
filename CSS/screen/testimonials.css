@@ -9,7 +9,6 @@
 }
 
 .testimonials-slider {
-  height: 238px;
   margin-bottom: 20px;
 }
 
@@ -40,6 +39,7 @@
 }
 
 .testimonials-blockquote {
+  height: 105px;
   color: #4b4b4b;
   font-size: 11px;
   line-height: 1.4545;
@@ -67,10 +67,6 @@
     padding: 64px 0 56px;
   }
 
-  .testimonials-slider {
-    height: 202px;
-  }
-
   .testimonials-card {
     width: 470px;
   }
@@ -78,6 +74,10 @@
     width: 112px;
     height: 112px;
     margin-bottom: 12px;
+  }
+
+  .testimonials-blockquote {
+    height: 45px;
   }
 }
 
