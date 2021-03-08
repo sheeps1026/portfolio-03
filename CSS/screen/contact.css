@@ -22,6 +22,13 @@
   margin-bottom: 13px;
 }
 
+.contact__name,
+.contact__email {
+  font-size: 11px;
+  line-height: 1.2572;
+  letter-spacing: 0.11px;
+}
+
 .contact-name {
   margin-right: 6px;
 }
@@ -34,27 +41,18 @@
   letter-spacing: 0.11px;
 }
 
-.contact-name input,
-.contact-email input,
-.contact-message textarea {
+.contact-input,
+.contact-textarea {
   border: 0.5333px solid #999999;
   border-radius: 2px;
   opacity: 0.8;
 }
 
-.contact-name input,
-.contact-email input {
+.contact-input {
   width: 108px;
   height: 24px;
   padding-left: 5px;
   color: #4b4b4b;
-}
-
-#contact__name,
-#contact__email {
-  font-size: 11px;
-  line-height: 1.2572;
-  letter-spacing: 0.11px;
 }
 
 .contact-message {
@@ -63,15 +61,14 @@
   margin-bottom: 16px;
 }
 
-.contact-message textarea {
+.contact-textarea {
   max-width: 224px;
   width: 100%;
   height: 63px;
 }
 
-.contact-form button {
+.contact-btn {
   display: block;
-  text-align: center;
   width: 112px;
   height: 25px;
   margin: 0 auto;
@@ -104,12 +101,9 @@
   margin-bottom: 0;
 }
 
-.contact-address-info div {
-  margin-right: 11px;
-}
-
 .contact-address-info i {
   width: 17px;
+  margin-right: 11px;
   font-size: 17px;
 }
 
@@ -177,7 +171,7 @@
     margin-bottom: 0;
   }
 
-  .contact-message textarea {
+  .contact-textarea {
     width: 100%;
   }
 
@@ -228,8 +222,7 @@
   }
 
   .contact-follow i:nth-child(5),
-  .contact-follow i:nth-child(6),
-  .contact-follow i:last-child {
+  .contact-follow i:nth-child(6) {
     margin-bottom: 0;
   }
 }
@@ -257,7 +250,7 @@
 
   .contact-name,
   .contact-email {
-    width: 100%;
+    width: 204px;
   }
 
   .contact-name {
@@ -271,14 +264,9 @@
     letter-spacing: 0.18px;
   }
 
-  .contact-name input,
-  .contact-email input {
+  .contact-input {
     width: 100%;
     height: 36px;
-  }
-
-  #contact__name,
-  #contact__email {
     font-size: 14px;
     line-height: 1.2571;
     letter-spacing: 0.14px;
@@ -289,13 +277,13 @@
     margin-bottom: 24px;
   }
 
-  .contact-message textarea {
+  .contact-textarea {
     max-width: 420px;
     width: 100%;
     height: 120px;
   }
 
-  .contact-form button {
+  .contact-btn {
     width: 210px;
     height: 48px;
     font-size: 16px;
