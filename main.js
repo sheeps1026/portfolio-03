@@ -1,5 +1,13 @@
 let index = 0;
 
+const modalOverlay = document.createElement("div");
+
+// Section
+const navigation = document.querySelector(".navigation");
+
+// Header-Group
+const menu = document.querySelector(".menu");
+
 // Pricing
 const CLASS_SELECT = "select";
 
@@ -7,6 +15,23 @@ const pricingCards = document.querySelectorAll(".pricing-card");
 
 const selectBtn = document.querySelectorAll(".select-btn");
 
+// Testimonials
+const CLASS_ACTIVE = "active";
+
+const btnPrev = document.querySelector(".testimonials-btn__prev");
+const btnNext = document.querySelector(".testimonials-btn__next");
+
+const testimonialsCards = document.querySelectorAll(".testimonials-card");
+
+const firstCard = document.querySelector(".testimonials-card:first-child");
+const lastCard = document.querySelector(".testimonials-card:last-child");
+
+const indicator = document.querySelectorAll(".indicator");
+
+// Navigation
+const navigationClose = document.querySelector(".navigation-close");
+
+// Pricing slider
 function display() {
   let num;
 
@@ -31,19 +56,7 @@ selectBtn.forEach((e) => {
   e.onclick = display;
 });
 
-// Testimonials
-const CLASS_ACTIVE = "active";
-
-const btnPrev = document.querySelector(".testimonials-btn__prev");
-const btnNext = document.querySelector(".testimonials-btn__next");
-
-const testimonialsCards = document.querySelectorAll(".testimonials-card");
-
-const firstCard = document.querySelector(".testimonials-card:first-child");
-const lastCard = document.querySelector(".testimonials-card:last-child");
-
-const indicator = document.querySelectorAll(".indicator");
-
+// Testimonials Slider
 for (let i = 0; i < testimonialsCards.length; i++) {
   if (testimonialsCards[i].classList.contains("active")) {
     index = i;
@@ -107,3 +120,23 @@ btnNext.onclick = nextMove;
 indicator.forEach((e) => {
   e.onclick = navDots;
 });
+
+// Navigation Menu
+menu.addEventListener("click", () => {
+  navigation.classList.add("showing");
+  document.body.appendChild(modalOverlay);
+});
+
+navigationClose.addEventListener("click", () => {
+  navigation.classList.remove("showing");
+  document.body.removeChild(modalOverlay);
+});
+
+modalOverlay.style.position = "fixed";
+modalOverlay.style.top = "0px";
+modalOverlay.style.left = "0px";
+modalOverlay.style.width = "100%";
+modalOverlay.style.height = "100%";
+modalOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.4";
+modalOverlay.style.overflow = "auto";
+modalOverlay.style.zIndex = "8";
