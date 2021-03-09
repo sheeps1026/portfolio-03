@@ -7,6 +7,8 @@ const navigation = document.querySelector(".navigation");
 
 // Header-Group
 const menu = document.querySelector(".menu");
+const videoBtn = document.querySelector(".video-btn");
+const video = document.querySelector(".video-player video");
 
 // Pricing
 const CLASS_SELECT = "select";
@@ -30,6 +32,31 @@ const indicator = document.querySelectorAll(".indicator");
 
 // Navigation
 const navigationClose = document.querySelector(".navigation-close");
+
+// Video
+videoBtn.addEventListener("click", () => {
+  if (videoBtn.classList.contains("play")) {
+    playBtn();
+    videoBtn.classList.remove("play");
+    video.pause();
+  } else {
+    stopBtn();
+    videoBtn.classList.add("play");
+    video.play();
+  }
+});
+
+function stopBtn() {
+  const icon = videoBtn.querySelector(".fas");
+  icon.classList.remove("fa-play");
+  icon.classList.add("fa-stop");
+}
+
+function playBtn() {
+  const icon = videoBtn.querySelector(".fas");
+  icon.classList.remove("fa-stop");
+  icon.classList.add("fa-play");
+}
 
 // Pricing slider
 function display() {
