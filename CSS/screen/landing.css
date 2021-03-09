@@ -9,9 +9,33 @@
   line-height: 1.2;
 }
 
+.video-player {
+  position: relative;
+}
+
 .video-player video {
   width: auto;
   height: 140px;
+}
+
+.video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  background-color: #f6f6f6;
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+}
+
+.video-btn i {
+  color: #4b4b4b;
+  font-size: 40px;
+  transform: translateX(15%);
 }
 
 @media screen and (min-width: 768px) {
@@ -40,7 +64,17 @@
     letter-spacing: -1.6px;
   }
 
+  .video-btn {
+    width: 72px;
+    height: 72px;
+  }
+
   .video-player video {
     height: 324px;
+  }
+
+  .video-btn i {
+    font-size: 50px;
+    transform: translateX(20%);
   }
 }
