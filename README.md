@@ -18,4 +18,4 @@ URL: [https://sheeps1026.github.io/portfolio-03/](https://sheeps1026.github.io/p
 
 포트폴리오 리스트
 
-- [반응형 웹사이트 1](https://github.com/sheeps1026/portfolio-02)
+- [반응형 웹사이트 1](https://sheeps1026.github.io/portfolio-02/)
