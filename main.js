@@ -32,6 +32,18 @@ const indicator = document.querySelectorAll(".indicator");
 
 // Navigation
 const navigationClose = document.querySelector(".navigation-close");
+const navigationBtn = document.querySelector(".navigation-btn");
+
+// scrollIntoView
+document.querySelectorAll('a[href^="#"]').forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    document.querySelector(element.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 
 // Video
 videoBtn.addEventListener("click", () => {

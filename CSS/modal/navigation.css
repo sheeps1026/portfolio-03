@@ -18,6 +18,8 @@
 
 .navigation-close {
   margin-bottom: 59px;
+  border: none;
+  background: none;
 }
 
 .navigation-close i {
