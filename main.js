@@ -6,6 +6,8 @@ const modalOverlay = document.createElement("div");
 const navigation = document.querySelector(".navigation");
 
 // Header-Group
+const mainLinkA = document.querySelector(".main-link a");
+const airlinesBtn = document.querySelectorAll(".airlines");
 const menu = document.querySelector(".menu");
 const videoBtn = document.querySelector(".video-btn");
 const video = document.querySelector(".video-player video");
@@ -34,6 +36,12 @@ const indicator = document.querySelectorAll(".indicator");
 const navigationClose = document.querySelector(".navigation-close");
 const navigationBtn = document.querySelector(".navigation-btn");
 
+// Error-Modal
+const errorModal = document.querySelector(".error-modal");
+const errorModalBtn = document.querySelector(".error-modal-btn");
+
+// -----------------------------------------------------------------------
+
 // scrollIntoView
 document.querySelectorAll('a[href^="#"]').forEach((element) => {
   element.addEventListener("click", (event) => {
@@ -43,6 +51,10 @@ document.querySelectorAll('a[href^="#"]').forEach((element) => {
       behavior: "smooth",
     });
   });
+});
+
+airlinesBtn.forEach((e) => {
+  e.onclick = showModal;
 });
 
 // Video
@@ -179,3 +191,23 @@ modalOverlay.style.height = "100%";
 modalOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.4";
 modalOverlay.style.overflow = "auto";
 modalOverlay.style.zIndex = "8";
+
+// Error-Modal
+function showModal() {
+  errorModal.classList.add("active");
+  document.body.appendChild(modalOverlay);
+}
+
+function hideModal() {
+  errorModal.classList.remove("active");
+  document.body.removeChild(modalOverlay);
+}
+
+navigationBtn.addEventListener("click", () => {
+  showModal();
+  navigation.classList.remove("showing");
+});
+
+errorModalBtn.addEventListener("click", () => {
+  hideModal();
+});
