@@ -6,7 +6,6 @@ const modalOverlay = document.createElement("div");
 const navigation = document.querySelector(".navigation");
 
 // Header-Group
-const mainLinkA = document.querySelector(".main-link a");
 const airlinesBtn = document.querySelectorAll(".airlines");
 const menu = document.querySelector(".menu");
 const videoBtn = document.querySelector(".video-btn");

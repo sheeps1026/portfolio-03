@@ -5,7 +5,7 @@
   border: 7px solid #000000;
   border-radius: 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/assets/image/banner-image.jpg");
+    url("https://github.com/sheeps1026/portfolio-03/blob/main/assets/image/banner-image.jpg?raw=true");
   background-position: center, center;
   background-size: cover;
   background-repeat: no-repeat;
