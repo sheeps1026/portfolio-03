@@ -1,0 +1,109 @@
+.header-group {
+  padding: 21px 0 160px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://github.com/sheeps1026/portfolio-03/blob/main/assets/image/landing-image.jpg?raw=true");
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  color: #ebce80;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.219;
+  letter-spacing: 1.11px;
+}
+
+.main-links {
+  display: none;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link a i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.social-link:nth-child(2) a i {
+  margin: 0 21px;
+}
+
+.menu {
+  border: none;
+  background: none;
+}
+
+.menu i {
+  color: #fff;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-group {
+    padding: 32px 0 121px;
+  }
+
+  .header-title {
+    font-size: 24px;
+    letter-spacing: 1.33px;
+  }
+
+  .main-links {
+    display: flex;
+    transform: translate(10%);
+  }
+
+  .main-link a {
+    margin-right: 36px;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3333;
+    letter-spacing: 1px;
+  }
+
+  .main-link:last-child a {
+    margin-right: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-group {
+    padding: 47px 0 132px;
+  }
+
+  .header-title {
+    font-size: 36px;
+    line-height: 1.2188;
+    letter-spacing: 2px;
+  }
+
+  .main-link a {
+    margin-right: 53px;
+    font-size: 18px;
+    line-height: 1.2572;
+  }
+
+  .social-link a i {
+    font-size: 24px;
+  }
+
+  .social-link:nth-child(2) a i {
+    margin: 0 43px;
+  }
+}
